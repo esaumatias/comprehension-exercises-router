@@ -8,7 +8,7 @@ import StrictAccess from './components/StrictAccess';
 class App extends Component {
   user = {
     userName: "joao",
-    password: 124,
+    password: 1234,
   }
   render() {
     return (
@@ -17,7 +17,6 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/About" component={About} />
           <Route exact path="/Users/:id" render={(props) => <Users {...props} /> } />
-          <Route exact path="/About" component={About} />
           <Route exact path="/StrictAccess" render={() => <StrictAccess user={this.user} />} />
         </switch>
       </BrowserRouter>
