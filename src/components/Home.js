@@ -6,6 +6,7 @@ class Home extends Component {
       <div>
         <Link to="/About">About</Link>
         <Link to="/Users">Users</Link>
+        <Link to="/StrictAccess">StrictAccess</Link>
         <h2>Home</h2>
         <p> My awesome Home component </p>
       </div>
